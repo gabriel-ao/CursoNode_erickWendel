@@ -1,0 +1,17 @@
+{
+  "name": "for-forin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "service": "node service.js",
+    "for1": "node 1_for-forin-forof.js",
+    "map2": "node 2_map.js",
+    "filter3": "node 3_filter.js",
+    "reduce4": "node 4_reduce.js",
+    "lista": "node lista"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
+  }
+}

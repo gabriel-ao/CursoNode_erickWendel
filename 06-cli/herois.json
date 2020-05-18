@@ -1,0 +1,13 @@
+[
+  { "id": 1589772538418, "nome": "Gabriel" },
+  { "id": 1589772720635, "nome": "Gabriel" },
+  { "id": 1589772746539, "nome": "Gabriel", "poder": "developer" },
+  { "id": 1589772767755, "nome": "Gabriel", "poder": "developer" },
+  {
+    "id": 1589772925756,
+    "nome": "Gabriel",
+    "individualidade": "developer",
+    "status": "vilao"
+  },
+  { "id": 1589807534675, "nome": "rafael chuluc", "status": "vilão" }
+]
