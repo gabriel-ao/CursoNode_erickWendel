@@ -10,10 +10,14 @@ const DEFAULT_ITEM_CADASTRAR = {
 };
 
 const DEFAULT_ITEM_ATUALIZAR = {
-  nome: "Izuku Midoriya - Deku",
-  individualidade: "One for alll",
+  // nome: "Izuku Midoriya - Deku",
+  // individualidade: "One for alll",
+  // status: "heroi",
+  // id: 10,
+  nome: "Toshinori Yagi - all might",
+  individualidade: "One for all",
   status: "heroi",
-  id: 10,
+  id: 1,
 };
 
 describe("Suite de manipulão de herois", function () {
