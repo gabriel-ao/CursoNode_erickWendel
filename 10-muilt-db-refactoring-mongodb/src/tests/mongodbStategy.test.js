@@ -1,12 +1,11 @@
 const assert = require('assert')
 
-const MongoDb = require('../db/strategies/mongodb')
+const MongoDb = require('../db/strategies/mongodb/mongodb')
+const HeroiSchema = require('./../db/strategies/mongodb/schemas/heroisSchema')
 
 const Context = require('../db/strategies/base/contenxtStrategy')
 
 // npm i --save-dev mocha
-
-const context = new Context(new MongoDb())
 
 const MOCK_HEROI_CADASTAR = {
   nome: 'Kai Chisaki',
@@ -28,9 +27,12 @@ const MOCK_HEROI_DEFAULT = {
 
 let MOCK_HEROI_ID = ''
 
+let context = {}
+
 describe('MongoDB Suite de testes', function () {
   this.beforeAll(async () => {
-    await context.connect()
+    const connection = MongoDb.connect()
+    context = new Context(new MongoDb(connection, HeroiSchema))
     await context.create(MOCK_HEROI_DEFAULT)
     const result = await context.create(MOCK_HEROI_ATUALIZAR)
     MOCK_HEROI_ID = result._id
